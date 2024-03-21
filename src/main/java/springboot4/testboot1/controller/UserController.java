@@ -73,9 +73,10 @@ public class UserController {
             model.addAttribute("users", users);
             return "users";
         } else {
-            userService.deleteUser(id);
+            userService.deleteUser(user);
             return "redirect:/users";
         }
     }
+
 
 }
